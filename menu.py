@@ -6,7 +6,7 @@ def Input_Info(name, mail, phone):
     phone = input("Enter your phone: ")
 
 
-log, sign = "Log in", "Sign in"
+log, sign = "Log in", "Sign up"
 print("{:*^20s}".format(" MENU "))
 print("{0: ^10s} {1: ^10s}".format(log, sign))
 
