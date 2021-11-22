@@ -1,12 +1,19 @@
 import os
+import firebase as fb
 
-def Input_Info(name, mail, phone):
-    name = input("Enter your name: ")
-    mail = input("Enter your e-mail: ")
-    phone = input("Enter your phone: ")
+# Function for authentication of registered user
+def enter():
+    mail = input("Enter your mail: ")
+    password = input("Enter your password:")
+    fb.auth.sign_in_with_email_and_password(mail, password)
+# Function for registration of user
+def registration():
+    mail = input("Enter your mail: ")
+    password = input("Enter your password:")
+    fb.auth.create_user_with_email_and_password(mail, password)
 
-
-log, sign = "Log in", "Sign up"
+# Menu
+log, sign = "Sign in", "Sign up"
 print("{:*^20s}".format(" MENU "))
 print("{0: ^10s} {1: ^10s}".format(log, sign))
 
@@ -19,11 +26,8 @@ while inp_user != log.lower() and inp_user != sign.lower():
 os.system('cls')
 if inp_user == log.lower():
     print("{: ^60}".format(log))
-    u_name = input("Enter your name: ")
-    password = input("Enter your password: ")
+    enter()
 else:
     print("{: ^60}".format(sign))
-    name, mail, phone = None, None, None
-    Input_Info(name, mail, phone)
-
+    registration()
 
