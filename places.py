@@ -1,21 +1,21 @@
-ashdod = {'Big Fashion Mall Ashdod': None,
-          'Ashdod Yam Park': None,
+ashdod = {'Big Fashion Mall Ashdod': '0',
+          'Ashdod Yam Park': '0',
           'The Eye of the Sun': '650',
           'The Corinne Mamane Museum of Philistine Culture': '60',
           'Givat Yonah': '240',
-          'Etgarim Lakhish Park': None,
-          'Gil Beach': None,
-          'Metzuda Beach': None,
-          'Magen David Synagogue': None,
+          'Etgarim Lakhish Park': '0',
+          'Gil Beach': '0',
+          'Metzuda Beach': '0',
+          'Magen David Synagogue': '0',
           'Nirvana Japanese Spa': '900'}
 
 arad = {'Kaparuchka': '60',
         'Muza': '60',
-        'Safsal Rerfect Nof': None}
+        'Safsal Rerfect Nof': '0'}
 
-bat_yam = {'Bat Yam Boardwalk': None,
+bat_yam = {'Bat Yam Boardwalk': '0',
            'Escape Room - The 5th Element': '60',
-           'Hasela Beach': None,
+           'Hasela Beach': '0',
            'Atlantis Hotel': '900',
            'RSQ - Real Story Quest': '70',
            'Wine N\' Dine': '80',
@@ -26,37 +26,100 @@ bat_yam = {'Bat Yam Boardwalk': None,
 beer_sheva = {'Hatzerim Israel Airforce Museum': '50',
               'Carasso Science Park': '40',
               'Negev Zoo': '60',
-              'Grand Canyon Shopping Mall': None,
+              'Grand Canyon Shopping Mall': '0',
               'Negev Museum of Art': '80',
-              'The BIG Mall': None,
-              'yes.Planet': None,
-              'Cinema City': None,
-              'Forum Club': None}
+              'The BIG Mall': '0',
+              'yesPlanet': '0',
+              'Cinema City': '0',
+              'Forum Club': '0'}
 
-eilat = {'Dekel Beach': None,
-         'Aqua Beach': None,
-         'Princess Beach': None,
-         'Dolphines Beach': None,
-         'The Red Mall': None,
+eilat = {'Dekel Beach': '0',
+         'Aqua Beach': '0',
+         'Princess Beach': '0',
+         'Dolphines Beach': '0',
+         'The Red Mall': '0',
          'WOW Theater': '60',
-         'Musical Fountain': None,
+         'Musical Fountain': '0',
          'Camel Ranch': '80',
          'King Solomon\'s Mines': '50',
          'Eilat City Museum': '40',
-         'Harbour Bridge': None}
+         'Harbour Bridge': '0'}
 
-jerusalem = {}
+jerusalem = {'Church of the Holy Sepulchre': '0',
+             'Western Wall': '0',
+             'Dome of the Rock': '0',
+             'Yad Vashem': '0',
+             'Mount of Olives': '0',
+             'Central City Sites': '0',
+             'Kidron Valley': '0',
+             'Bardak Restaurant': '90',
+             'Family Restaurant': '50',
+             'Istanbul Samer': '80',
+             'BBB Burgus Burger Bar': '150'}
 
-netanya = {}
+netanya = {'Poleg Beach': '0',
+           'Inter Active Atzmaut Square': '0',
+           'Victory Monument': '0',
+           'Shefayim Water Park': '60',
+           'Ir Yamim Mall': '0',
+           'Sironit Beach': '0',
+           'Antique & Collectors Weekly Market': '0',
+           'Placebo Escape Room': '60',
+           'No Exit - Escape Room': '50',
+           'Via Maris Spa': '200'}
 
-netivot = {}
+ramat_gan = {'Safary Zoo': '50',
+             'Ayalon Mall': '0',
+             'Ramat Gan National Park': '0',
+             'Rocks Garden': '0',
+             'Israeli Art Museum': '50',
+             'Elram Mall': '0',
+             'Escape Room Avatar': '50',
+             'The Galim Floatation Center': '60',
+             'Ramat Gan Bowling': '60'}
 
-ramat_gan = {}
+tel_aviv = {'The Yitzhak Rabin Center': '50',
+            'Jerusalem Beach': '0',
+            'Frishman Beach': '0',
+            'Banana Beach': '0',
+            'Hilton Beach': '0',
+            'Mona Beach': '0',
+            'Carmel Bazar': '0',
+            'Gusto': '60',
+            'Nini Hachi': '80',
+            'Nam': '80',
+            'Hamburg': '60',
+            'Arte Italian Ice Cream': '40',
+            'Onza': '80',
+            'Beit Reuven Museum': '50'}
 
-tel_aviv = {}
+tsfats = {'Soul and Art Fine Art Gallery': '50',
+          'Yom Tov Art Gallery': '40',
+          'The General Exhibition Gallery': '50',
+          'Sarah\'s Tent Art Gallery': '50',
+          'The Old City of Safed': '0',
+          'The Sephardic Synagogue of the Ari': '0',
+          'Elements Cafe Tzfat': '60',
+          'Bat Yaar': '60',
+          'Pizza Da Leone': '50',
+          'Seudat Gan Eden': '60',
+          'Bagdad Cafe': '20'}
 
-tsfats = {}
+tveria = {'Kineret Sea': '0',
+          'Jordan River Village': '0',
+          'Domus Galilaeae': '0',
+          'Berenice Winery': '400',
+          'Tomb of Maimonides': '0',
+          'Avi\'s Restaurant': '60',
+          'El Rancho': '50'}
 
-tveria = {}
-
-haifa = {}
+haifa = {'Baha\'í Gardens': '60',
+         'Giraffe': '50',
+         'Louis Promenade': '0',
+         'En Carmel': '50',
+         'GREIF': '40',
+         'Shtroudl': '50',
+         'Minna Tomei': '60',
+         'Zanzara': '50',
+         'Ruben': '60',
+         'Ma\'ayan Habira': '80'}

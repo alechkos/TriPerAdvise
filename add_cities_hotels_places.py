@@ -1,4 +1,5 @@
 import firebase as fb
+
 import places
 import hotels
 
@@ -17,20 +18,21 @@ fb.db.child("Cities").child("Arad").child('Hotels').update(hotels.arad)
 fb.db.child("Cities").child("Bat Yam").child('Hotels').update(hotels.bat_yam)
 fb.db.child("Cities").child("Eilat").child('Hotels').update(hotels.eilat)
 fb.db.child("Cities").child("Haifa").child('Hotels').update(hotels.haifa)
-"""
 
 # places
-
 fb.db.child('Cities').child('Ashdod').child('Places').update(places.ashdod)
 fb.db.child("Cities").child("Arad").child('Hotels').update(places.arad)
-fb.db.child('Cities').child('Bat Yam').child('Places').update(places.bat_yam)
-fb.db.child('Cities').child('Beer Sheva').child('Places').update(places.beer_sheva)
+fb.db.child('Cities').child("Bat Yam").child('Places').update(places.bat_yam)
+fb.db.child("Cities").child("Beer Sheva").child("Places").update(places.beer_sheva)
 fb.db.child('Cities').child('Eilat').child('Places').update(places.eilat)
 fb.db.child('Cities').child('Jerusalem').child('Places').update(places.jerusalem)
 fb.db.child('Cities').child('Netanya').child('Places').update(places.netanya)
-fb.db.child('Cities').child('Netivot').child('Places').update(places.netivot)
+# fb.db.child('Cities').child('Netivot').child('Places').update(places.netivot)
 fb.db.child('Cities').child('Ramat Gan').child('Places').update(places.ramat_gan)
-fb.db.child('Cities').child('Tel Aviv').child('Places').update(places.tel_aviv)
+fb.db.child('Cities').child("Tel Aviv").child('Places').update(places.tel_aviv)
 fb.db.child('Cities').child('Tsfat').child('Places').update(places.tsfats)
 fb.db.child('Cities').child('Tveria').child('Places').update(places.tveria)
 fb.db.child('Cities').child('Haifa').child('Places').update(places.haifa)
+"""
+# fb.db.child('Cities').child('Silent Hill').update({'test': '0'})
+# fb.db.child('Cities').child('Silent Hill').remove()
