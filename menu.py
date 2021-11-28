@@ -1,6 +1,7 @@
 import os
 import firebase as fb
 
+
 # Function for authentication of registered user
 def enter():
     mail = input("Enter your mail: ")
@@ -19,7 +20,6 @@ def enter():
             break
 
 
-
 # Function for registration of user
 def registration():
     mail = input("Enter your mail: ")
@@ -33,6 +33,8 @@ def registration():
             password = input("Password should be at least 6 characters! Try again please: ")
         password2 = input("Passwords doesn't match! Repeat your password please: ")
     fb.auth.create_user_with_email_and_password(mail, password)
+
+
 # Menu
 log, sign = "Sign in", "Sign up"
 print("{:*^20s}".format(" MENU "))
