@@ -1,6 +1,4 @@
 import pyrebase
-import firebase_admin as fa
-from firebase_admin import auth as auth2
 
 
 # configuration key
@@ -24,7 +22,3 @@ auth = firebase.auth()
 db = firebase.database()
 storage = firebase.storage()
 
-
-# Admin SDK
-cred = fa.credentials.Certificate("privateAccountKey.json")
-fa.initialize_app(cred)
