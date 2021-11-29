@@ -1,9 +1,6 @@
 from tkinter import *
 import firebase as fb
-<<<<<<< HEAD
-=======
 import cities
->>>>>>> Pavel
 
 
 class Places:
@@ -15,27 +12,17 @@ class Places:
         :param name: city's name
         :return: list of the places in 'name'
         """
-<<<<<<< HEAD
-        label_places = Label(root, text='Places', font=('New Times Roman', 21, 'bold')).grid(row=0, column=1)
-        places = fb.db.child('Cities').child(name).child('Places').get()
-
-=======
 
 
         label_places = Label(root, text='Places:', font=('New Times Roman', 21, 'bold')).grid(row=1, column=2)
         places = fb.db.child('Cities').child(name).child('Places').get()
 
 
->>>>>>> Pavel
         list_of_places = []
         for i in places:
             list_of_places.append(Button(root, text=i.key() + ': ' + str(i.val()), borderwidth=5))
         count = 0
         for i in list_of_places:
-<<<<<<< HEAD
-            i.grid(row=1 + count, column=0, stick='we')
-            count += 1
-=======
             i.grid(row=2 + count, column=2, stick='we')
             count += 1
 
@@ -44,4 +31,3 @@ class Places:
             sys.exit()
 
         Button(root, text="Exit the program",borderwidth=5, command=exit_program).grid(row=0, column=3)
->>>>>>> Pavel

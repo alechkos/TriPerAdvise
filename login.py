@@ -1,16 +1,10 @@
 from tkinter import *
 import firebase as fb
 import menu
-<<<<<<< HEAD
-
-class Login:
-
-=======
 import cities
 
 
 class Login:
->>>>>>> Pavel
 
     def login_press(self, root):
         def go_to_menu():
@@ -22,11 +16,6 @@ class Login:
             m.start_window(temp_m)
             root.destroy()
 
-<<<<<<< HEAD
-        # A Label widget to show in toplevel
-        Label(root, text="Enter data to log in", font=("Times New Roman", 18), justify=CENTER).place(x=140, y=100,
-                                                                                                       width=220, height=50)
-=======
         def enter(m, p):
             flag = False
             try:
@@ -55,7 +44,6 @@ class Login:
         Label(root, text="Enter data to log in", font=("Times New Roman", 18), justify=CENTER).place(x=140, y=100,
                                                                                                      width=220,
                                                                                                      height=50)
->>>>>>> Pavel
 
         # a label for entering email
         Label(root, text="Enter email:").place(x=-20, y=150, width=120, height=50)
@@ -63,22 +51,6 @@ class Login:
         Label(root, text="Enter password:").place(x=-14, y=200, width=120, height=50)
 
         # creating field for entering email
-<<<<<<< HEAD
-        Entry(root, width=50, fg="blue", justify=CENTER, bd=3).place(x=100, y=160, width=300, height=40)
-
-        # creating field for entering password
-        Entry(root, width=50, fg="blue", justify=CENTER, bd=3).place(x=100, y=200, width=300, height=40)
-
-        # creating button for confirmation of data
-        ok = Button(root, text="Ok", font=("Times New Roman", 15), borderwidth=5).place(x=350, y=240, width=50, height=40)
-        #creating button for come back
-        back = Button(root, text="<-", command=go_to_menu, font=("Times New Roman", 15), borderwidth=5).place(x=10,
-                                                                                                               y=10,
-                                                                                                               width=50,
-                                                                                                               height=40)
-
-
-=======
         mail = Entry(root, width=50, fg="blue", justify=CENTER, bd=3)
         mail.place(x=100, y=160, width=300, height=40)
         # creating field for entering password
@@ -91,4 +63,3 @@ class Login:
         # creating button for come back
         back = Button(root, text="<<", command=go_to_menu, font=("Times New Roman", 15), borderwidth=5)
         back.place(x=10, y=10, width=50, height=40)
->>>>>>> Pavel
