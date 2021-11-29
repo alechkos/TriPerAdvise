@@ -10,8 +10,7 @@ firebaseConfig = {
   'messagingSenderId': "415829560302",
   'appId': "1:415829560302:web:27d2770750748f92875cff",
   'measurementId': "G-8SG87YPDT1",
-  'databaseURL': "https://triperadvise-default-rtdb.europe-west1.firebasedatabase.app/",
-  'serviceAccount': "privateAccountKey.json"
+  'databaseURL': "https://triperadvise-default-rtdb.europe-west1.firebasedatabase.app/"
 }
 
 # Firebase Authentication
