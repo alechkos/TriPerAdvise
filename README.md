@@ -1,6 +1,7 @@
 # TriPerAdvise
 
 Used libraries: tkinter, unitest, PIL, firebase
+
 Used methods: OOP
 
 File window is the class of creating new window
