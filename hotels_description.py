@@ -9,12 +9,14 @@ hotels = {
 'Akhva Accommodation Unit',
 
     'Inbar Hotel':
-'At the entrance to the city of Arad, situated amongst desert landscapes and surrounded by clear mountain air,\n'
-'one finds the Inbar Hotel.The hotel provides guests with an accommodation experience in the desert which includes\n'
-'pleasant and well-equipped rooms, a heated indoor pool, dry sauna, home-cooked and delicious meals and a variety of\n'
-'function halls.All of this with easy access to the attractions and hiking routes in the area. Whether you seek a\n'
-'quiet moment away from the bustling city, or an extreme desert experience, you will find that the Inbar Hotel is an\n'
-'ideal starting point for activities in the unique  archeological and tourist sites that the region has to offer.',
+'''
+At the entrance to the city of Arad, situated amongst desert landscapes and surrounded by clear mountain air,\n
+one finds the Inbar Hotel.The hotel provides guests with an accommodation experience in the desert which includes\n
+pleasant and well-equipped rooms, a heated indoor pool, dry sauna, home-cooked and delicious meals and a variety of\n
+function halls.All of this with easy access to the attractions and hiking routes in the area. Whether you seek a\n
+quiet moment away from the bustling city, or an extreme desert experience, you will find that the Inbar Hotel is an\n
+ideal starting point for activities in the unique  archeological and tourist sites that the region has to offer.
+''',
 
     'Moonlight Suite':
 'Located in Arad, Moonlight Suite in Arad features a garden. The property provides mountain views and a terrace. The\n'
@@ -161,10 +163,188 @@ hotels = {
 "from the apartment. The nearest airport is Ben GurionAirport, 51 mi from The Private House",
 
     # Eilat
+    "Mali Country Hospitality":
+'''Located in Eilat and with Neviot Beach reachable within 1.4 mi, Mali Country Hospitality provides express check-in \n
+and check-out, rooms, a restaurant, free WiFi throughout the property and a garden. Featuring family rooms, \n
+this property also provides guests with a terrace. The accommodations offers room service, and organizing tours for \n
+guests.\n
+Guest rooms at the guest house come with air conditioning, a seating area, a flat-screen TV with satellite channels, \n
+a kitchen, a dining area and a private bathroom with bathrobes, a shower and a hairdryer. At Mali Country Hospitality \n
+each room is equipped with bed linen and towels.\n
+You can play tennis at Mali Country Hospitality, and the area is popular for cycling and fishing.\n
+The guest house provides an ironing service, as well as business facilities like fax and photocopying.\n
+Eilat Botanical Garden is 1.4 mi from Mali Country Hospitality, while Underwater Observatory Park is 5.6 mi away. The \n
+nearest airport is Eilat Ramon Airport, 11 mi from the accommodations.
+''',
+
+    "Soleil Hotel":
+'''Soleil Boutique Hotel is located in Eilat and provides air-conditioned accommodations with free WiFi access. A bar \n
+is at the guests' disposal. \n
+Units here come with a flat-screen cable TV and a fridge. Some feature a balcony and a seating area with a sofa. The \n
+private bathrooms are fitted with a bath or a shower, a hairdryer and come with free toiletries. A view of the city \n
+is available in all rooms. \n
+A sandy beach is only 50 m away from the Soleil Boutique hotel. A local bus stop is steps away. Eilat Airport is only \n
+400 m away. \n
+This is our guests' favorite part of Eilat, according to independent reviews.
+''',
+
+    "Comfort Hotel Eilat":
+'''Located in the center of Eilat, just a 12-minute walk from the shores of the Red Sea, Comfort hotel Eilat offers \n
+an outdoor pool with grill bar, free WiFi throughout, and air-conditioned rooms with a 40" LCD TV and private bathroom. \n
+All rooms at the Comfort Eilat include a kettle, tea/coffee ingredients, and a safe. Some rooms feature views of the \n
+Gulf of Aqaba. \n
+The property's outdoor pool is open throughout the summer. You can book sessions at the hotel's paid spa, \n
+which features a hot tub, steam room and dry sauna. \n
+The hotel is 0.7 mi from the Gan Binyamin Central Park and Sculpture Garden. Eilat's bus terminal is a 5-minute walk \n
+away while Eilat Airport is 751 m away.
+''',
+
+    "Pegasus":
+'''Set near the marina at the northern coast of Eilat, the hotel Pegasus offers 2 outdoor pools, a restaurant and \n
+free parking. It is a 10-minute walk from the beach on the Red Sea, and Eilat's city center. \n
+Pegasus hotel is designed in an elegant oriental style, each room is air conditioned and includes an LCD cable TV, \n
+fridge and tea-and-coffee maker. All rooms have a private bathroom with a shower. Some rooms overlook the pool area, \n
+and some even have a private terrace. \n
+The restaurant serves healthy and nutritious meals and a buffet breakfast including breads, cheese and hummus. For \n
+dinner guests can choose from the extensive menu featuring local and international cuisine and a children's menu. \n
+Adult and children's pools are located in the hotel’s inner courtyard and are surrounded by palm trees and sun beds.
+''',
+
+    "Mr Soof":
+'''Located 0.9 mi from Neviot Beach, Mr. Soof - By TLV2GO offers air-conditioned accommodations with a balcony and \n
+free WiFi. \n
+Each unit comes with a sofa, a seating area, a flat-screen TV with satellite channels, a well-fitted kitchenette, \n
+a safety deposit box and a private bathroom with a hairdryer. A microwave, a mini-bar and stovetop are also provided, \n
+as well as a kettle and a coffee machine. \n
+Eilat Botanical Garden is 1.4 mi from the apartment, while Underwater Observatory Park is 4.3 mi away. The nearest \n
+airport is Eilat Ramon Airport, 12 mi from Mr. Soof - By TLV2GO.
+''',
 
     # Haifa
+    'Golden Crown Haifa':
+'''Golden Crown Haifa is set in Haifa, 1.2 mi from Haifa’s Municipal Theater, and features a terrace as well as a \n
+bar. The property is close to popular attractions like Haifa Port, The Quiet Beach and Rambam Medical Center Haifa \n
+Israel. \n
+All air conditioned, rooms in the hotel are equipped with a coffee machine and a flat-screen TV. Featuring a private \n
+bathroom with a shower and free toiletries, some units at Golden Crown Haifa also provide guests with a sea view. \n
+Breakfast is available daily, and includes buffet and kosher options.\n
+Languages spoken at the reception include Arabic, English and French.\n
+Rambam Medical Center Haifa Israel is 1.4 mi from Golden Crown Haifa, while Baha'i Gardens and Golden Dome is 1.1 mi \n
+away.
+''',
+
+    'The Colony Hotel':
+'''The Colony Hotel is in the German Colony area of Haifa. This boutique hotel offers a quiet garden, \n
+and a sunbathing area on the rooftop terrace. \n
+All rooms come with LCD TVs, free Wi-Fi, and tea and coffee makers. This small hotel combines these modern amenities \n
+with original features and architecture of a property that is over 100 years old. \n
+Hotel The Colony is just half a kilometer from the UNESCO site of Baha'i Gardens and Golden Dome. You have a great \n
+choice of restaurants, shoppng, and cafés in the neighborhood. Free public parking is available nearby. 
+''',
+
+    'Leonardo Plaza Haifa':
+'''Set on the Mediterranean Sea coast and very close to Haifa's beach, this hotel has free parking, free WiFi, \n
+an indoor pool and gourmet cuisine. The large and elegant suites overlook Carmel beach. \n
+Suites at the Leonardo Plaza Haifa have stylish modern furnishings and a comfortable lounge. Each is air conditioned, \n
+and includes an LCD TV with cable channels. \n
+The swimming pool is indoors, but the roof opens up during summer season. Guided tours of Haifa can be organized on \n
+Saturdays, while the German Collony near Wadi Nisnas is visited on Friday. \n
+Leonardo Plaza Haifa is close to the Matam business center, and 0.9 mi from Hof Hacarmel Train Station. All the \n
+area's famous attractions are less than a 10-minute drive away. Sammy Ofer Stadium is 1.2 mi from the property. 
+''',
+
+    'Mirabelle Plaza':
+'''Set on the green slopes of Mount Carmel, this Meribelle Plaza offers panoramic views of Haifa and the Bay. All \n
+rooms come with air conditioning, free Wi-Fi, and an LCD TV. Free tours of the Bahai Gardens are provided. \n
+The rooms are equipped with hardwood floors, a safe, and a tea/coffee maker. Some rooms are located on the higher \n
+floors, and offer free parking. \n
+The Meribelle Plaza Haifa includes a wellness center with indoor swimming pool, gym and hot tub. There is also a \n
+synagogue on site. 
+''',
+
+    'BAT GALIM oceanfront luxury':
+'''Set less than 0.6 mi from The Quiet Beach, BAT GALIM oceanfront luxury - by PORT CITY offers a garden, \n
+a terrace and air-conditioned accommodations with a balcony and free WiFi. \n
+The apartment provides guests with a patio, garden views, a seating area, satellite flat-screen TV, a fully equipped \n
+kitchen with a microwave and a fridge, and a private bathroom with shower and bathrobes. An oven and stovetop are \n
+also featured, as well as a kettle and a coffee machine. \n
+If you would like to discover the area, windsurfing, diving and fishing are possible in the surroundings.\n
+Haifa’s Municipal Theater is 3.7 mi from BAT GALIM oceanfront luxury - by PORT CITY, while Elijah's Cave is 0.7 mi \n
+away. The nearest airport is Haifa Airport, 3.7 mi from the accommodations. 
+''',
 
     # Jerusalem
+    "Eldan Hotel":
+'''Overlooking the Old City Walls from its convenient location in the central tourist area, Eldan Hotel offers an \n
+attentive service and air-conditioned rooms with free Wi-Fi. It is a 10-minute walk from the Jaffa Gate to \n
+Jerusalem's Old City. \n
+Rooms at Hotel Eldan feature cable TV. Breakfast and can be enjoyed out in the picturesque courtyard.\n
+Choosing Eldan means you are 10 minutes away on foot from the shops and restaurants on Ben Yehuda Street. Mamila \n
+shopping center is 601 m away. \n
+Staff are available 24-hours a day and can assist with car rental, currency exchange, and tourist information.\n
+Complimentary underground parking is at guests' disposal upon availability.
+''',
+
+    "Brown Machne Yehuda":
+'''Set in Jerusalem, Brown Machne Yehuda has a restaurant. The property is located 1.1 mi from Holyland Model of \n
+Jerusalem, 1.3 mi from Western Wall and 1.4 mi from Dome of the Rock. Garden of Gethsemane is 1.6 mi away. The units \n
+in the hotel are fitted with a flat-screen TV. The rooms come with air conditioning, and selected rooms here will \n
+provide you with a balcony. All rooms include a desk. The accommodations offers a terrace. For any tips on how to get \n
+around or what to do in the area, guests can ask at the reception. Church of All Nations is 1.6 mi from Brown Machne \n
+Yehuda. The nearest airport is Ben Gurion Airport, 25 mi from the property.
+''',
+
+    "The American Colony Hotel":
+'''With its swimming pool, gourmet restaurants, landscaped gardens and a high-tech fitness center, The American \n
+Colony Hotel - Small Luxury Hotels of the World offers a tranquil atmosphere in the heart of the vibrant city of \n
+Jerusalem. Free Wi-Fi is provided throughout the hotel. \n
+Rooms at The American Colony are located in 4 buildings; the Main House, the East House, the Palm House and the Cow \n
+Byre. Luxurious and spacious rooms feature air conditioning, flat-screen TV and Italian "Frette" bed linen. The \n
+modern bathrooms are equipped with designer amenities. \n
+You can enjoy a selection of international and local savory products in the garden, in the bar and or in the patio.\n
+The hotel wellness center includes an outdoor swimming pool, sauna and a well equipped fitness room. The business \n
+center is at your disposal for free. \n
+The American Colony Hotel is less than 1.2 mi from the Old City. The nearby light-rail can take you to Jerusalem's \n
+modern city center. Free on-site parking is available. 
+''',
+
+    "The Inbal":
+'''The Inbal Hotel is located in Jerusalem’s city center, a short walk from both modern Jerusalem and the Old City. \n
+The hotel offers free Wi-Fi in the entire property. \n
+Inbal Jerusalem Hotel has excellent leisure and spa facilities, modern fitness center, massage rooms, saunas and a \n
+hot tub. The property offers an outdoor swimming pool and a heated indoor swimming pool. \n
+The hotel is built entirely in traditional Jerusalem stone, and offers luxurious rooms and suites with an LCD TV. \n
+Some rooms offer panoramic views over the old city. \n
+The new and renovated club lounge offers drinks and light meals throughout the day to guests staying on the executive \n
+floor. It has a huge balcony overlooking the Old City. 
+
+''',
+
+    "Waldorf Astoria":
+'''Located in the heart of Jerusalem, 500 m from the Jaffa Gate and Jerusalem's Old City, Waldorf Astoria Jerusalem \n
+is housed in a building whose design blends Greco-Roman, Gothic and Ottoman motifs. It offers 2 restaurants and free \n
+WiFi. \n
+The rooms are air-conditioned and feature a smart 46'' LED TV with satellite and pay-per-view channels, a mini-bar \n
+and a coffee machine. The bathroom is equipped with both a bathtub and shower. Free toiletries, towels, linen, \n
+slippers and a bathrobe are included in the rate. \n
+The Palace Restaurant serves an Israeli buffet breakfast in the mornings. After noon it turns to a kosher restaurant \n
+that offers an à la carte menu. Guests can enjoy afternoon tea or a drink at the King's Court, while The Gaden \n
+Terrace is a tapas bar serving cocktails and Mediterranean cuisine. \n
+The Waldorf Astoria has a huge dividable ballroom, and next to it, a large foyer that can be used for cocktails and \n
+pre-function events. 
+''',
+
+    "Herbert Samuel Hotel":
+'''Boasting a wellness center with an indoor pool and sauna, Herbert Samuel Hotel Jerusalem offers luxurious \n
+accommodations located just 801 m from Jerusalem Old City. Guests enjoy a restaurant and free WiFi. \n
+All air-conditioned rooms and suites display elegant décor and flat-screen TVs. Junior suites feature a seating area \n
+with sofa. \n
+The Herbert Samuel Hotel's restaurant serves lunch and dinner, guests can also enjoy drinks at the bar. A continental \n
+breakfast is served daily. \n
+The wellness and spa center comes with an indoor pool and sauna. Massages can be booked. Other facilities of the \n
+property include a business center and free bike rental service. \n
+The Western Wall is 1.2 mi from Herbert Samuel Hotel Jerusalem, while the Great Synagogue is a 10-minute walk away.
+''',
 
     # Netanya
     'AZIMUT':
@@ -392,14 +572,55 @@ hotels = {
 'links the hotel with the Sea of Galilee and its beaches.',
 
     'Luxury Suite by Sea of Galilee':
-'',
+'''Located in Tiberias, Luxury Suite by Sea of Galilee features accommodations 601 m from St. Peter's Church and 0.7 \n
+mi from Casa Dona Gracia. Free WiFi is available throughout the property and private parking is available on site. \n
+Guests at the apartment can enjoy a continental or a buffet breakfast.\n
+If you would like to discover the area, skiing and cycling are possible in the surroundings.\n
+Popular points of interest near Luxury Suite by Sea of Galilee include The Scots Church, Tomb of Maimonides and \n
+Marina. The nearest airport is Haifa, 29 mi from the accommodations, and the property offers a paid airport shuttle \n
+service. 
+''',
+
 
     'King Solomon Hotel Tiberias':
-'',
+'''Boasting a seasonal outdoor pool and a sun terrace, King Solomon Hotel Tiberias is located in Tiberias and \n
+provides air-conditioned accommodations with free WiFi access. \n
+The elegantly decorated rooms here come with a seating area featuring a sofa and a TV. Each also has a desk, \n
+an electric kettle and a fridge. The private bathrooms are fitted with a bath. A balcony with a view of the Sea of \n
+Galilee is provided in some of the units. \n
+Hotel Tiberias King Solomon consists of a restaurant and a bar, as well as a garden and a terrace. Meeting and \n
+fitness facilities are at the guests' disposal. \n
+The center of the city of Tiberias, well-known for its medicinal hot springs, is 0.9 mi away from the hotel. \n
+Maimonides' Tomb can be visited within a 1.2 mi distance. The Sea of Galilee can also be reached in 1.2 mi. Mount \n
+Arbel National Park is 4.3 mi away. \n
+A local bus stop is 131 m away from the property. Free private parking is provided on site. Ben Gurion Airport is 81 \n
+mi away. 
+''',
+
 
     'Caesar Premier Tiberias Hotel':
-'',
+'''Set along the lakeside promenade in Tiberias, the Caesar Premier has rooms with a balcony overlooking the Sea of \n
+Galilee. It features a pool, a spa, and free Wi-Fi. \n
+Spacious rooms at the Caesar have air conditioning, a TV and refrigerator. Each has an electric teakettle and a \n
+private bathroom with free toiletries plus a hairdryer. \n
+The hotel’s outdoor pool is the ideal place to relax after a busy day of sightseeing. Children can enjoy a range of \n
+activities organized by the hotel’s entertainment team. There is also an on-site nightclub for adults, \n
+with live entertainment and themed karaoke nights. \n
+The property’s Hamat Caesar Spa features 20 treatment rooms where guests can enjoy a wide range of relaxing therapies \n
+and massages. There is also a thermo-mineral indoor pool for guests to enjoy, as well as a sauna and a modern gym. \n
+The Caesar Premier Tiberias can be used as an ideal base for exploring many of the famous historic and holy sites in \n
+the Galilee region. 
+''',
 
-    'Nof Kinneret Villa':
-''
+
+    'U Boutique Kinneret':
+'''Offering a seasonal outdoor pool and views of the sea, U Boutique Kinneret is located in Tiberias in the North \n
+District Israel Region, 400 m from The Scots Church. Guests can enjoy the on-site bar. Free WiFi is featured \n
+throughout the property and free private parking is available on site. \n
+Every room comes with a flat-screen TV with cable channels. Certain units have a seating area for your convenience. \n
+You will find a coffee machine in the room. The rooms come with a private bathroom. Extras include L'Occitane \n
+toiletries and a hairdryer. \n
+You will find a 24-hour front desk at the property.\n
+Tomb of Maimonides is 500 m from U Boutique Kinneret, while Marina is 801 m from the property.
+'''
 }
