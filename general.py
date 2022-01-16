@@ -1,5 +1,9 @@
 from tkinter import *
 import sys
+import firebase as fb
+import urllib.parse
+from PIL import Image, ImageTk
+import io
 
 
 class General:
@@ -8,6 +12,7 @@ class General:
     pprice = None
     ind = None
     title_name = None
+    image = None
 
     def __init__(self, root, list_p, cname='', uname='', mail='', pname='', pprice='', title_name='', ind=''):
         self.root = root
@@ -15,22 +20,42 @@ class General:
         self.uname = uname
         self.mail = mail
         self.title_name = title_name
+        self.full_screen_bg()
+        self.root.after(1, lambda: self.root.focus_force())
 
-        log_out = Button(root, text="Log Out", borderwidth=5, command=self.log_out)
-        log_out.place(rely=0.0, relx=0.8, x=0, y=0, anchor=NE)
+        log_out = Button(root, text="Log Out", font=("Lucida Grande", 11, 'bold'), bg="white", fg="#fc9d17",
+                         borderwidth=5, command=self.log_out)
+        log_out.place(x=1708, width=142, height=40)
 
-        exit = Button(root, text="Exit the program", borderwidth=5, command=self.exit_program)
-        exit.place(rely=0.0, relx=1.0, x=0, y=0, anchor=NE)
+        exit = Button(root, text="❌", font=('Lucida Grande', 13, 'bold'), bg="white", fg="red", borderwidth=5,
+                      command=self.exit_program)
+        exit.place(x=1880, width=40, height=40)
+
+    def full_screen_bg(self):
+        path = "window/interface_bg.png"
+        url = fb.storage.child(path).get_url(None)
+        data = urllib.request.urlopen(url).read()
+        im = Image.open(io.BytesIO(data))
+        self.image = ImageTk.PhotoImage(im, master=self.root)
+        Label(self.root, image=self.image).place(x=0, y=0, relwidth=1, relheight=1)
+
+    def mini_screen_bg(self):
+        path = "window/beach_edited.png"
+        url = fb.storage.child(path).get_url(None)
+        data = urllib.request.urlopen(url).read()
+        im = Image.open(io.BytesIO(data))
+        self.image = ImageTk.PhotoImage(im, master=self.root)
+        Label(self.root, image=self.image).place(x=0, y=0, relwidth=1, relheight=1)
 
     def go_to_cities(self):
         import cities
         General.title_name = "Cities"
-        master = Tk()
-        master.geometry("800x640")
-        master.title("Cities")
-        master.config(bg='grey')
-        master.attributes('-fullscreen', True)
-        cities.Cities(master, self.list_p, self.cname, self.uname, self.mail, self.pname, self.pprice, self.title_name,
+        temp_m = Tk()
+        temp_m.after(1, lambda: temp_m.focus_force())
+        temp_m.title("Cities")
+        temp_m.geometry("560x440+680+213")
+        temp_m.resizable(False, False)
+        cities.Cities(temp_m, self.list_p, self.cname, self.uname, self.mail, self.pname, self.pprice, self.title_name,
                       self.ind)
         self.root.destroy()
 
@@ -38,9 +63,8 @@ class General:
         import parts
         General.title_name = 'Parts'
         master = Tk()
-        master.geometry("800x640")
+        master.after(1, lambda: master.focus_force())
         master.title("Our menu")
-        master.config(bg='grey')
         master.attributes('-fullscreen', True)
         parts.Hotels(master, self.list_p, self.cname, self.uname, self.mail, self.pname, self.pprice, self.title_name,
                      self.ind)
@@ -51,8 +75,8 @@ class General:
         General.title_name = 'Parts'
         General.cname = name
         master = Tk()
+        master.after(1, lambda: master.focus_force())
         master.title("Our menu")
-        master.config(bg='grey')
         master.attributes('-fullscreen', True)
         parts.Hotels(master, self.list_p, self.cname, self.uname, self.mail, self.pname, self.pprice, self.title_name,
                      self.ind)
@@ -64,8 +88,8 @@ class General:
         General.pname = name
         General.pprice = price
         master = Tk()
+        master.after(1, lambda: master.focus_force())
         master.title(name)
-        master.config(bg='grey')
         master.attributes('-fullscreen', True)
         parts_after_button.Button_Hotels(master, self.list_p, self.cname, self.uname, self.mail, self.pname,
                                          self.pprice, self.title_name, self.ind)
@@ -77,8 +101,8 @@ class General:
         General.ind = ind
         General.pname = name
         master = Tk()
+        master.after(1, lambda: master.focus_force())
         master.title(name)
-        master.config(bg='grey')
         master.attributes('-fullscreen', True)
         parts_after_button.Button_Hotels(master, self.list_p, self.cname, self.uname, self.mail, self.pname,
                                          self.pprice, self.title_name, self.ind)
@@ -88,8 +112,8 @@ class General:
         import delete_part
         import add_description
         master = Tk()
+        master.after(1, lambda: master.focus_force())
         master.title("Delete Part")
-        master.config(bg='grey')
         master.attributes('-fullscreen', True)
         if name == "Description" or name == "Del_Description" or name == 'Pictures' or name == 'Del_Pictures':
             add_description.Description(master, self.list_p, self.cname, self.uname, self.mail, self.pname, self.pprice,
@@ -102,49 +126,57 @@ class General:
 
     def go_to_admin_menu(self):
         import admin_menu
-        master = Tk()
-        master.title("Users")
-        master.config(bg='#116562')
-        master.geometry('640x400')
-        admin_menu.Admin_Menu(master, self.list_p, self.cname, self.uname, self.mail, self.pname, self.pprice,
-                    self.title_name, self.ind)
+        temp_m = Tk()
+        temp_m.after(1, lambda: temp_m.focus_force())
+        temp_m.title("Admin Interface")
+        temp_m.geometry("560x440+680+213")
+        temp_m.resizable(False, False)
+        admin_menu.Admin_Menu(temp_m, self.list_p, self.cname, self.uname, self.mail, self.pname, self.pprice,
+                              self.title_name, self.ind)
         self.root.destroy()
 
     def users(self):
         import users
         master = Tk()
+        master.after(1, lambda: master.focus_force())
         if self.title_name != "Moderators":
             master.title("Users")
         else:
             master.title("Moderators")
-        master.config(bg='#116562')
-        master.geometry('640x400')
+        master.geometry("560x440+680+213")
+        master.resizable(False, False)
         users.Users(master, self.list_p, self.cname, self.uname, self.mail, self.pname, self.pprice,
-                                   self.title_name, self.ind)
+                    self.title_name, self.ind)
         self.root.destroy()
-
 
     def goto_stat(self, name):
         import stat_of_user
         self.uname = name
-        master = Tk()
-        master.title("Users")
-        master.config(bg='#116562')
-        master.geometry('640x400')
-        stat_of_user.Statistics(master, self.list_p, self.cname, self.uname, self.mail, self.pname, self.pprice,
-                              self.title_name, self.ind)
+        temp_m = Tk()
+        temp_m.after(1, lambda: temp_m.focus_force())
+        temp_m.resizable(False, False)
+        temp_m.title("Statistics")
+        temp_m.attributes('-fullscreen', True)
+        stat_of_user.Statistics(temp_m, self.list_p, self.cname, self.uname, self.mail, self.pname, self.pprice,
+                                self.title_name, self.ind)
         self.root.destroy()
 
     def log_out(self):
         import menu
-        master = Tk()
-        master.title('TriPerAdvise')
-        master.geometry("440x440")
-        master.resizable(False, False)
-        # photo = PhotoImage(file='logo.png')
-        # root.iconphoto(False, photo)
-        master.config(bg='grey')
-        menu.Menu(master)
+        self.list_p = None
+        self.cname = None
+        self.uname = None
+        self.mail = None
+        self.pname = None
+        self.pprice = None
+        self.title_name = None
+        self.ind = None
+        temp_m = Tk()
+        temp_m.after(1, lambda: temp_m.focus_force())
+        temp_m.title('TriPerAdvise')
+        temp_m.geometry("560x440+680+213")
+        temp_m.resizable(False, False)
+        menu.Menu(temp_m)
         self.root.destroy()
 
     def exit_program(self):
